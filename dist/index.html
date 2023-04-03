@@ -1,0 +1,207 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="flex">
+    <div class="flex-none w-48 h-screen bg-primaryrose dark:bg-nightrider block">
+      <nav class="text-right">
+        <div>
+          <h1 class="uppercase p-6 border-b-2 font-bold border-b-white dark:border-b-nightgrey dark:text-white">
+            Health
+          </h1>
+        </div>
+        <ul class="text-sm text-gray-500 dark:text-nightgrey mt-1" id="menu">
+          <li class="pt-4">
+            <span class="w-auto px-6 py-2 cursor-pointer hover:rounded-l-full hover:dark:rounded-l-full hover:bg-white hover:dark:bg-eclipse hover:bg-opacity-25">
+              Home
+            </span>
+          </li>
+          <li class="pt-4">
+            <span class="w-auto px-6 py-2 cursor-pointer hover:rounded-l-full hover:dark:rounded-l-full hover:bg-white hover:dark:bg-eclipse hover:bg-opacity-25">
+              About
+            </span>
+          </li>
+          <li class="pt-4">
+            <span class="w-auto px-6 py-2 rounded-l-full bg-white dark:bg-donjuan dark:text-white cursor-pointer">
+              Calculator
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="grow px-16 py-12 text-gray-600 dark:text-white">
+      <div class="container mx-auto px-4 sm:px-8">
+        <span class="flex justify-end">
+          <button id="light" class="px-4 py-2 rounded-full bg-white border-gray-400 border-2 text-gray-700 text-sm">
+            日間模式 <span><img src="img/icon-sun.png" alt="sun" class="h-4 sm:h-4 inline-block"></span>
+          <button id="dark" class="px-4 py-2 rounded-full bg-gray-700 border-gray-700 border-2 text-white text-sm">
+            夜間模式 <span><img src="img/icon-moon.png" alt="moon" class="h-4 sm:h-4 inline-block"></span>
+          </button>
+        </span>
+      </div>
+      <div class="container mx-auto px-4 sm:px-8">
+        <div class="py-6">
+          <div>
+            <h2 class="text-2xl font-semibold leading-tight">熱量表</h2>
+          </div>
+          <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-6 overflow-x-auto">
+            <div class="inline-block min-w-full rounded-lg overflow-hidden">
+              <table class="min-w-full leading-normal">
+                <thead>
+                  <tr>
+                    <th
+                      class="px-5 py-3 border-2 border-gray-200 dark:border-nightgrey bg-gray-100 dark:bg-donjuan text-left text-xs font-semibold text-gray-700 dark:text-white uppercase tracking-wider">
+                      食物
+                    </th>
+                    <th
+                      class="px-5 py-3 border-2 border-gray-200 dark:border-nightgrey bg-gray-100 dark:bg-donjuan text-left text-xs font-semibold text-gray-700 dark:text-white uppercase tracking-wider">
+                      份量
+                    </th>
+                    <th
+                      class="px-5 py-3 border-2 border-gray-200 dark:border-nightgrey bg-gray-100 dark:bg-donjuan text-left text-xs font-semibold text-gray-700 dark:text-white uppercase tracking-wider">
+                      熱量(卡)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">白米飯</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1碗</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">225</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">速食麵</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1包</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">250</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">香蕉</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1根</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">80</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">中杯熱拿鐵</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1杯</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">180</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">火腿起士蛋三明治</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1份</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">220</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">滷味</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1份</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">450</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">義美泡芙</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1份</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">330</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">咖喱飯</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1碗</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">680</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">丼飯</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">1碗</p>
+                    </td>
+                    <td class="px-5 py-2 border-2 border-gray-200 dark:border-nightgrey bg-white dark:bg-eclipse text-sm">
+                      <p class="text-gray-900 dark:text-white whitespace-no-wrap">680</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 sm:px-8 mb-2">
+        <button class="relative inline-block px-8 leading-tight">
+          <span aria-hidden class="absolute inset-0 bg-red-200 dark:bg-donjuan opacity-50 rounded-full"></span>
+          <span class="relative">Total</span>
+        </button>
+      </div>
+
+      <div class="container mx-auto px-4 sm:px-8">
+        <div class="w-48 border-b-2 border-gray-200 dark:border-nightgrey h-8"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+  let light = document.getElementById("light");
+  let dark = document.getElementById("dark");
+
+  light.addEventListener("click", function () {
+    document.documentElement.classList.remove("dark");
+  });
+
+  dark.addEventListener("click", function () {
+    document.documentElement.classList.add("dark");
+  });
+  </script>
+
+</body>
+</html>
