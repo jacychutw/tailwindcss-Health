@@ -13,10 +13,10 @@
 ```
 npm install
 ```
-- 編輯input.css
-- 啟動開發伺服器
+- 編輯input.css 編輯完輸入
 ```
 npm run build-css
 ```
+- 開啟index.html檔案
 
 🌈 &nbsp; Have fun with Tailwind CSS!
